@@ -32,9 +32,9 @@ jobs:
       with:
         servers: |
           [{
-           "id": "exchange",
-           "username": "${{ secrets.anypoint_platform_username }}",
-           "password": "${{ secrets.anypoint_platform_password }}"
+           "id": "exchange-server",
+           "username": "${{ secrets.PLATFORM_USERNAME }}",
+           "password": "${{ secrets.PLATFORM_PASSWORD }}"
           }]
     - name: Deploy to Exchange
       run: |
